@@ -61,33 +61,27 @@ from browser import document as doc
 import ace
 
 # 清除畫布
-def clear_bd2(ev):
-    # 注意這裡清除的畫布 id 為 brython_div2
-    bd2 = doc["brython_div2"]
-    bd2.clear()
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
 
-Ace2 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw_container2", storage_id="kw_py_src2" )
-# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
-def run2():
-    # 利用 get 取下 src2 變數值
-    try:
-        url2 = doc.query["src2"]
-    except:
-        url2 = "https://gist.githubusercontent.com/mdecourse/05930b1775b77293523b59b1bbb43e57/raw/2ffeba334d9862a9b4d765f328bc95684879465e/grp2a_2022.py"
-    prog2 = open(url2).read()
-    # 將程式載入編輯區
-    Ace2.editor.setValue(prog2)
-    Ace2.editor.scrollToRow(0)
-    Ace2.editor.gotoLine(0)
-    # 直接執行程式
-    Ace2.run()
-# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
-doc['kw_run2'].bind('click', Ace2.run)
-doc['kw_show_console2'].bind('click', Ace2.show_console)
-doc['kw_clear_console2'].bind('click', Ace2.clear_console)
-doc['clear_bd2'].bind('click', clear_bd2)
-# 呼叫函式執行
-run2()
+# 利用 ace 中的 Editor 建立 Ace 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+
+class button2:
+    def __init__(self, url):
+        self.url = url
+
+    # 記得加入 event 輸入變數
+    def do(self,ev):
+        Ace2.editor.setValue(open(self.url).read())
+        Ace2.editor.scrollToRow(0)
+        Ace2.editor.gotoLine(0)
+        Ace2.run()
+# for 2a
+grp2a_2022_url = "https://gist.githubusercontent.com/mdecourse/05930b1775b77293523b59b1bbb43e57/raw/2ffeba334d9862a9b4d765f328bc95684879465e/grp2a_2022.py"
+grp2a_2022 = button2(grp2a_2022_url)
+doc["grp2a_2022"].bind("click", grp2a_2022.do)
 </script>
 </p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
