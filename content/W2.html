@@ -196,73 +196,24 @@ function doSave(storage_id, filename){
 <p><!-- 印出程式2--></p>
 <p>
 <script type="text/python3">
-from browser import document
-# 將 2a 學號、帳號與組別的網址設為 studlist_url
-aorb = "2a"
-studlist_url = "https://mde.tw/studlist/2022spring/" + aorb + ".txt"
-# 利用 open() 與 read() 讀出資料
-data = open(studlist_url).read()
-# 若要 debug 可以查驗所取得的 data 內容
-#print(data)
-# 利用 split() 函式, 使用每一行的跳行符號\n切割所讀回的資料
-# 切割後的 stud 為數列 (list)
-stud = data.split("\n")
-# 列出去頭(標題)與去尾(空白行)的數列查驗
-#print(stud[1:-1])
-count = 0
-member = []
-# 利用 for 迴圈逐一取出數列中的元素(每位學員的資料)
-for i in stud[1:-1]:
-    #print(i)
-    studno, github, grp = i.split("\t")
-    member.append([grp, studno, github])
-    #print(studno, github, grp)
-    #print(type(grp))
-    # 因為有人沒有組別或沒有登記 github 帳號
-    if grp != "" and github != "":
-        if grp == "1":
-            #print(studno)
-            count += 1
-    else:
-        print("尚未分組者:", studno)
-#print(count)
-#print(member)
-# 根據 grp 作為 key 對 member 數列排序
-member.sort(key = lambda x: x[0])
-d = {}
-# 逐一檢視 member 數列, 將同組序的資料合併成為同一 list
-for i in member:
-    # 若該組序已存在 d dict 中,
-    # 則以 extend() 納入除組序之外的組員學號
-    if i[0] in d:
-        d[i[0]].extend(i[1:])
-        #print("i[0] in d:",i[0], "d:", d)
-    else:
-        # 若已納分組的 element 中之組序為全新組序,
-        # 則將該已納分組的 element 放入 dict 首位元素
-        # 準備透過 extend() 納入其他組員學號
-        d[i[0]] = i
-        #print("i i[0] not in d:", i, "d:", d)
-#print("finally d:", d, "d.values():", d.values())
-# 取 d dict 的值並設為 list
-group_member = list(d.values())
-#print(group_member)
-for i in group_member:
-    #print(i)
-    # 列出組別
-    print("#"*20)
-    print("第" + str(i[0]) + "組:")
-    print("#"*20)
-    #print(str(int(len(i[1:])/2)) + "人")
-    count = 0
-    for j in i[1:]:
-        count += 1
-        # 學號為雙數索引值
-        # github 帳號為單數索引值
-        if count%2 != 0:
-            print(j, end="")
-        else:
-            print(" -", j)
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd2(ev):
+    # 注意這裡清除的畫布 id 為 brython_div2
+    bd2 = doc["brython_div2"]
+    bd2.clear()
+
+Ace2 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw_container2", storage_id="kw_py_src2" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run2():
+    # 利用 get 取下 src2 變數值
+    try:
+        url2 = doc.query["src2"]
+    except:
+        url2 = "https://gist.githubusercontent.com/mdecourse/05930b1775b77293523b59b1bbb43e57/raw/2ffeba334d9862a9b4d765f328bc95684879465e/grp2a_2022.py"
+    prog2 = open(url2).read()
     # 將程式載入編輯區
     Ace2.editor.setValue(prog2)
     Ace2.editor.scrollToRow(0)
