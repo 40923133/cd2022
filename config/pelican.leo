@@ -47,6 +47,13 @@
 </v>
 </v>
 </v>
+<v t="leo.20220420091931.1"><vh>@path markdown</vh>
+<v t="leo.20220420091931.2"><vh>midterm</vh>
+<v t="leo.20220420091931.3"><vh>midterm</vh>
+<v t="leo.20220420091931.4"><vh>@edit 20220420.md</vh></v>
+</v>
+</v>
+</v>
 <v t="yen.20170108171733.71"><vh>@path markdown</vh>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
@@ -88,6 +95,9 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115093726.1"></t>
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180423103639.1"></t>
+<t tx="leo.20220420091931.1"></t>
+<t tx="leo.20220420091931.2"></t>
+<t tx="leo.20220420091931.3"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
