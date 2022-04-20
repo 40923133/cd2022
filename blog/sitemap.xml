@@ -5,84 +5,98 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/</loc>
-<lastmod>2022-04-13T01:03:22-00:00</lastmod>
+<lastmod>2022-04-20T10:33:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/archives.html</loc>
-<lastmod>2022-04-13T01:03:22-00:00</lastmod>
+<lastmod>2022-04-20T10:33:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/tags.html</loc>
-<lastmod>2022-04-13T01:03:22-00:00</lastmod>
+<lastmod>2022-04-20T10:33:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/categories.html</loc>
-<lastmod>2022-04-13T01:03:22-00:00</lastmod>
+<lastmod>2022-04-20T10:33:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/pages/about/</loc>
-<lastmod>2022-04-12T22:49:28+08:00</lastmod>
+<lastmod>2022-04-13T08:38:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>.https://40923133.github.io/cd2022/blog/index.html/midterm.html</loc>
+<lastmod>2022-04-20T09:53:38+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/w6_40923133.html</loc>
-<lastmod>2022-04-13T01:01:22+08:00</lastmod>
+<lastmod>2022-04-20T09:51:40+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/2020-Fall-Intro-to-computer-programming.html</loc>
-<lastmod>2022-03-02T11:00:40+08:00</lastmod>
+<lastmod>2022-04-12T23:23:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/category/misc.html</loc>
-<lastmod>2022-04-13T01:01:22+08:06</lastmod>
+<lastmod>2022-04-20T09:53:38+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>.https://40923133.github.io/cd2022/blog/index.html/tag/midterm.html</loc>
+<lastmod>2022-04-20T09:53:38+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/tag/2022springcd.html</loc>
-<lastmod>2022-04-13T01:01:22+08:06</lastmod>
+<lastmod>2022-04-20T09:51:40+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/tag/2020fallcp.html</loc>
-<lastmod>2022-03-02T11:00:40+08:06</lastmod>
+<lastmod>2022-04-12T23:23:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/author/409231333.html</loc>
-<lastmod>2022-04-13T01:01:22+08:06</lastmod>
+<lastmod>2022-04-20T09:53:38+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>.https://40923133.github.io/cd2022/blog/index.html/author/yen.html</loc>
-<lastmod>2022-03-02T11:00:40+08:06</lastmod>
+<lastmod>2022-04-12T23:23:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
